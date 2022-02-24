@@ -1,6 +1,6 @@
 name 'windows'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Stephanie Thompson'
+maintainer_email 'steph@stephcodes.dev'
 license 'All Rights Reserved'
 description 'Installs/Configures windows'
 version '0.1.0'
@@ -16,4 +16,4 @@ chef_version '>= 16.0'
 # `View Source` link will be displayed on this cookbook's page when uploaded to
 # a Supermarket.
 #
-# source_url 'https://github.com/<insert_org_here>/windows'
+# source_url 'https://github.com/<insert_org_here>/windows

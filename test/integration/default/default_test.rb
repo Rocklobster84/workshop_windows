@@ -3,14 +3,7 @@
 # The Chef InSpec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec/resources/
 
-unless os.windows?
-  # This is an example test, replace with your own test.
-  describe user('root'), :skip do
-    it { should exist }
-  end
-end
-
-# This is an example test, replace it with your own test.
-describe port(80), :skip do
-  it { should_not be_listening }
+# Test only the administrators group is allowed to login locally
+describe security_policy do
+  its('SeInteractiveLogonRight') { should eq ['S-1-5-32-544'] }
 end

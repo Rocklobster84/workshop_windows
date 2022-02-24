@@ -2,4 +2,6 @@
 # Cookbook:: windows
 # Recipe:: default
 #
-# Copyright:: 2022, The Authors, All Rights Reserved.
+# Copyright:: 2022, Stephanie Thompson, All Rights Reserved.
+
+include_recipe 'windows::security_bench'
