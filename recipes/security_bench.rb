@@ -12,7 +12,7 @@ windows_user_privilege 'Allow log on locally' do
 end
 
 windows_user_privilege 'Allow log on through Remote Desktop Services' do
-  privilege 'SeInteractiveRemoteLogonRight'
+  privilege 'SeInteractiveLogonRight'
   users ['BUILTIN\Administrators', 'BUILTIN\Remote Desktop Users']
   action :set
 end
