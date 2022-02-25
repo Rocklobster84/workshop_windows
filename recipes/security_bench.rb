@@ -14,7 +14,7 @@ end
 windows_user_privilege 'Allow log on through Remote Desktop Services' do
   privilege 'SeInteractiveRemoteLogonRight'
   users ['BUILTIN\Administrators', 'BUILTIN\Remote Desktop Users']
-  action: set
+  action :set
 end
 
 windows_security_policy 'EnableAdminAccount' do
