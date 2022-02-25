@@ -12,7 +12,7 @@ windows_user_privilege 'Allow log on locally' do
 end
 
 windows_user_privilege 'Allow log on through Remote Desktop Services' do
-  privilege 'SeInteractiveLogonRight'
+  privilege 'SeRemoteInteractiveLogonRight'
   users ['BUILTIN\Administrators', 'BUILTIN\Remote Desktop Users']
   action :set
 end
@@ -37,6 +37,7 @@ registry_key 'HKLM\SOFTWARE\Policies\Microsoft\W32Time\TimeProviders\NtpClient' 
     type: :dword,
     data: 1,
   }]
+  recursive: true
   action :create
 end
 
